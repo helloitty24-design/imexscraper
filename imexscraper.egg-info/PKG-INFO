@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: imexscraper
-Version: 0.1.0
+Version: 0.1.1
 Summary: Download images from imx.to galleries and save them as a zip archive.
 Author: helloitty24-design
 License: GPL-3.0-or-later
@@ -31,7 +31,7 @@ pip install .
 
 ```bash
 imexscraper https://imx.to/g/1ktrx
-python3 -m build```
+```
 
 or with Python module mode:
 
