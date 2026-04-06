@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "imexscraper"
-version = "0.1.0"
+version = "0.1.1"
 description = "Download images from imx.to galleries and save them as a zip archive."
 readme = "README.md"
 requires-python = ">=3.8"
