@@ -1,0 +1,2 @@
+[console_scripts]
+imexscraper = imexscraper.cli:main

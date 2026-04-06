@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imexscraper"
+version = "0.1.0"
+description = "Download images from imx.to galleries and save them as a zip archive."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "GPL-3.0-or-later" }
+authors = [
+  { name = "helloitty24-design" }
+]
+dependencies = [
+  "requests>=2.0",
+  "beautifulsoup4>=4.0"
+]
+keywords = ["imx", "imx.to", "gallery", "downloader", "zip", "image scraper"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/helloitty24-design/imexscraper"
+"Source" = "https://github.com/helloitty24-design/imexscraper"
+
+[project.scripts]
+imexscraper = "imexscraper.cli:main"
+
+[tool.setuptools]
+packages = ["imexscraper"]

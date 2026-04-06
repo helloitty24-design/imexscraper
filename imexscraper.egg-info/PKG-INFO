@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: imexscraper
+Version: 0.1.0
+Summary: Download images from imx.to galleries and save them as a zip archive.
+Author: helloitty24-design
+License: GPL-3.0-or-later
+Project-URL: Homepage, https://github.com/helloitty24-design/imexscraper
+Project-URL: Source, https://github.com/helloitty24-design/imexscraper
+Keywords: imx,imx.to,gallery,downloader,zip,image scraper
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.0
+Requires-Dist: beautifulsoup4>=4.0
+Dynamic: license-file
+
+# imexscraper
+
+A simple Python package for downloading images from `imx.to` galleries and packaging them into a ZIP file.
+
+## Installation
+
+```bash
+pip install .
+```
+
+## Usage
+
+```bash
+imexscraper https://imx.to/g/1ktrx
+```
+
+To specify an output folder:
+
+```bash
+imexscraper https://imx.to/g/1ktrx -o my_gallery
+```
+
+## Python API
+
+```python
+from imexscraper import download_gallery_to_zip
+zip_path = download_gallery_to_zip('https://imx.to/g/1ktrx')
+```
+
+The package will download images from the gallery and save them in a zip archive named after the output folder.
