@@ -2,6 +2,7 @@ LICENSE
 README.md
 pyproject.toml
 imexscraper/__init__.py
+imexscraper/__main__.py
 imexscraper/cli.py
 imexscraper/scraper.py
 imexscraper.egg-info/PKG-INFO

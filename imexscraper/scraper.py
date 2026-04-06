@@ -98,9 +98,10 @@ def get_direct_image_url(viewer_url, session, verbose=True):
 
 
 def download_image(image_url, save_dir, index, total, session, verbose=True):
-    basename = os.path.basename(urlparse(image_url).path) or f'image_{index}.jpg'
-    if not os.path.splitext(basename)[1]:
-        basename += '.jpg'
+    # Extract file extension from original URL
+    ext = os.path.splitext(urlparse(image_url).path)[1] or '.jpg'
+    # Use sequential numbering: 1, 2, 3, ..., n
+    basename = f'{index}{ext}'
 
     filepath = os.path.join(save_dir, basename)
     if os.path.exists(filepath):

@@ -31,6 +31,12 @@ pip install .
 
 ```bash
 imexscraper https://imx.to/g/1ktrx
+python3 -m build```
+
+or with Python module mode:
+
+```bash
+python -m imexscraper https://imx.to/g/1ktrx
 ```
 
 To specify an output folder:
